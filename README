@@ -1,0 +1,20 @@
+This is a quick script I whipped up to send any snippet of text to my Kindle.
+Mail needs to be set up for this to work.
+
+Here's how to install it:
+
+1) Open Automator
+2) Create a new service
+3) Make sure the selector menus say
+   "Service receives selected *text* in *any application*"
+4) Drag a "Run AppleScript" action into your workflow
+5) Paste the text of send-to-kindle.applescript into the text area
+6) Taylor the script to your needs -- put your Kindle's e-mail address in
+   theKindleEmailAddress
+6) Save the workflow and give it a meaningful name such as "Send to Kindle"
+
+Automator will save the workflow in ~/Library/Services
+
+To use it, highlight any text on your Mac. Your workflow should appear in the
+services menu of the application and in the context menu that appears when you
+control-click the text.
